@@ -1,0 +1,26 @@
+<h1>Diffrent Type of clothes</h1>
+<select [(ngModel)]="clothe">
+    <option>  kids</option>
+    <option>Boys</option>
+    <option>Girls</option>
+</select>
+<br>
+<br>
+<br>
+<img *ngIf="clothe=='kids'" src="/assets/kids1.jpg" width="20%" height="30%">
+<img src="/assets/kids2.jpg" width="20%" height="30%" *ngIf="clothe=='kids'">
+<img src="/assets/boys1.jpg" width="20%" height="30%" *ngIf="clothe=='Boys'">
+<br>
+<br>
+<img src="/assets/boys2.jpg" width="20%" height="30%" *ngIf="clothe=='Boys'">
+<img src="/assets/girls1.jpg" width="20%" height="30%" *ngIf="clothe=='Girls'">
+<img src="/assets/girls2.jpg" width="20%" height="30%" *ngIf="clothe=='Girls'">
+
+<input type="radio" name="cloth" value="kids" [(ngModel)]="clothe">
+<label>Kids</label>
+<br>
+<input type="radio" name="cloth" value="Boys" [(ngModel)]="clothe">
+<label>Boys</label>
+<br>
+<input type="radio" name="cloth" value="Girls" [(ngModel)]="clothe">
+<label>Girls</label>

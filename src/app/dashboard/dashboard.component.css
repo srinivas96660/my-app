@@ -1,0 +1,27 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+   
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: peru;
+    text-align: center;
+    color: brown;
+    font-size: 30px;
+
+}
+.left > h6{
+    cursor: pointer;
+}
+.left > h6:hover{
+    background-color: white;
+}
+.right{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(218, 31, 134);
+    overflow: auto;
+}

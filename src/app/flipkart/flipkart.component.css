@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.item{
+    text-align: center;
+    background-color: antiquewhite; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.parent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 50px;
+}

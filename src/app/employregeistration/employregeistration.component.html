@@ -1,0 +1,48 @@
+<h1>Employregeistration</h1>
+<label>Name:</label>
+<input type="text" [(ngModel)]="name">
+<br>
+<br>
+<label>age:</label>
+<input type="number" [(ngModel)]="age">
+<br>
+<br>
+<label>company:</label>
+<input type="text" [(ngModel)]="company">
+<br>
+<br>
+<label>package:</label>
+<input type="number" [(ngModel)]="package">
+<br>
+<br>
+<label>percentage:</label>
+<input type="text" [(ngModel)]="percentage">
+
+<button (click)="register()">Register</button>
+<table class="table-dark">
+    <thead>
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>age</th>
+            <th>Company</th>
+            <th>Package</th>
+            <th>percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employe of employees; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{employe.name}}</td>
+            <td>{{employe.age | age}}</td>
+            <td>{{employe.company}}</td>
+            <td [ngStyle]="{'color': employe.package >=10 ? 'green' : 'red'}"
+                [ngClass]="{'yellow':employe.package >=10, 'grey' :employe.package < 10}">
+                {{employe.package}}</td>
+            <td>{{employe.percentage | percentage}}</td>
+            <td>
+                <button class="btn btn-success" (click)="delete(i)">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

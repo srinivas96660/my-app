@@ -1,0 +1,14 @@
+<select [(ngModel)]="ratting">
+    <option>5</option>
+    <option>4</option>
+    <option>3</option>
+    <option>2</option>
+    <option>1</option>
+</select>
+<br>
+
+<img src="/assets/1star.jpeg" *ngIf="ratting==1">
+<img src="/assets/2star.jpeg" *ngIf="ratting==2">
+<img src="/assets/3star.jpeg" *ngIf="ratting==3">
+<img src="/assets/4star.jpeg" *ngIf="ratting==4">
+<img src="/assets/5star.jpeg" *ngIf="ratting==5">

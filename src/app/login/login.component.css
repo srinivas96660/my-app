@@ -1,0 +1,28 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+.child1{
+    margin-top: 50px;
+    text-align: center;
+}
+.log{
+    text-align: center;
+}
+label{
+    font: 30px;
+    background-color: rgb(55, 196, 160);
+    color:white;
+    padding: 5px;
+    margin: 5px;
+   
+}
