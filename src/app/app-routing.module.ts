@@ -8,6 +8,7 @@ import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
 import { ClotheComponent } from './clothe/clothe.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployregeistrationComponent } from './employregeistration/employregeistration.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
@@ -54,7 +55,8 @@ const routes: Routes = [
     {path:"footbal", component:FootbalComponent},
     {path:"vehicle-details/:id", component:VehicleDetailsComponent},
     {path:"bank-details/:id", component:BankDetailsComponent},
-    {path:"create-account", component:CreateAccountComponent, canDeactivate:[NotifyGuard]}
+    {path:"create-account", component:CreateAccountComponent, canDeactivate:[NotifyGuard]},
+    {path: "create-user", component:CreateUserComponent}
 
 
   ]},

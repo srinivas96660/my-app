@@ -38,6 +38,7 @@ import { FootbalComponent } from './footbal/footbal.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { CreateAccountComponent } from './create-account/create-account.componen
     FootbalComponent,
     VehicleDetailsComponent,
     BankDetailsComponent,
-    CreateAccountComponent
+    CreateAccountComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,

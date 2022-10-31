@@ -1,0 +1,27 @@
+<h1>Create User Form</h1>
+<div class="main">
+<form [formGroup]="userForm">
+<label>UserName</label>
+<input type="text" placeholder="user name" formControlName="name">
+<br>
+<br>
+<label>phone</label>
+<input type="text" placeholder="phone" formControlName="phone">
+<br>
+<br>
+<label>DOB</label>
+<input type="date" placeholder="dob" formControlName="dob">
+<br>
+<br>
+<h2>address</h2>
+<div formGroupName="address">
+    <label>city</label>
+    <input type="text" placeholder="city" formControlName="city">
+    <br>
+    <label>pin</label>
+    <input type="number" placeholder="pin" formControlName="pin">
+</div>
+
+<button (click)="submit()" class="btn btn-primary">submit</button>
+</form>
+</div>
