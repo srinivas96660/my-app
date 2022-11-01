@@ -32,7 +32,7 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 
 const routes: Routes = [
   {path:'login', component: LoginComponent},
-  {path:"dashboard", component:DashboardComponent,canActivate:[AuthGuard], children:[
+  {path:"dashboard", component:DashboardComponent, children:[
     {path:"calculator", component:CalculatorComponent},
     {path:"interpolation", component:InterpolationComponent},
     {path:"event-binding", component:EventbindingComponent},
